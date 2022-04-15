@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(to bottom, rgb(92, 92, 92), black);
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    padding-top: 1em;
+    text-align: center;
+    min-width: 320px;
+    max-width: 900px;
+    margin: auto;
+    display: block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header > nav > ul{
+    padding: 1em;
+    display: flex;
+}
+
+header > nav > ul > li{
+    display: block;
+    margin: auto;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover{
+    background-color: rgb(160, 160, 160);
+    transition-duration: 1s;
+    padding: 3px 6px;
+}
+
+main{
+    background-color: azure;
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+    display: block;
+    margin-top: 1em;
+    text-align: center;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.363);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main > h1{
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+
+label, input{
+    display: block;
+    margin: auto;
+}
+
+label{
+    padding: 20px;
+    font-size: 100%;
+}
+
+.colunas{
+    columns: 3;
+    padding-top: 20px;
+    height: 100%;
+}
+
+button{
+    width: 130px;
+    height: 30px;
+    background-color: black;
+    color: azure;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.247);
+    margin: 1em 0;
+}
+
+footer{
+    background-color: azure;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 1em;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a{
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    background-color: rgb(168, 168, 168);
+    padding: 0 10px;
+}
+
+footer a:hover{
+    background-color: black;
+    color: azure;
+    transition-duration: 1s;
+}
+
+button:active{
+    background-color: gray;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 800px){
+    
+    main{
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 799px){
+    footer{
+        margin: 0;
+    }
+
+    main{
+        box-shadow: none;
+    }
+}
+
+@media screen and (max-width: 362px){
+    .colunas{
+        columns: 2;
+    }
+}
